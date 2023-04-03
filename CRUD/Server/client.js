@@ -21,11 +21,21 @@ const client = new NotesService(
 
 module.exports = client;
 
-client.getAllNotes({}, (error, notes) => {
-  if (!error) {
-    console.log('successfully fetch data')
-    console.log(notes)
-  } else {
-    console.error(error)
-  }
-})
+//Contoh pemanggilan fungsi CRUD pada client.js
+
+// client.addNotes(
+//   {
+//     id: "3",
+//     title: "Note 3",
+//     content: "Content 3",
+//     count: 90
+//   },
+//   (error, notes) => {
+//     if (!error) {
+//       console.log('successfully create data')
+//       console.log(notes)
+//     } else {
+//       console.error(error)
+//     }
+//   }
+// )
